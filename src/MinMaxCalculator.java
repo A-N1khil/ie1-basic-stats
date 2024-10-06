@@ -5,6 +5,16 @@ public class MinMaxCalculator {
         // Create an array of double numbers
         double numbers[] = { 1.9, 6.7, 8.9, 7.8, 2.0 };
     }
+    
+    public static double findMax(double... numbers) {
+        double max = numbers[0];
+        for (double num : numbers) {
+            if (num > max) {
+                max = num;
+            }
+        }
+        return max;
+    }
 
     public static double min(double[] num)
     {
@@ -20,5 +30,6 @@ public class MinMaxCalculator {
 
         }
         return min;
+
     }
 }
